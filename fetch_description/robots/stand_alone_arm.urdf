@@ -521,7 +521,7 @@
     name="camera_joint"
     type="fixed">
     <origin
-      xyz="0 1.5383 1.074"
+      xyz="0 1.5233 1.049"
       rpy="0 0 0" />
     <parent
       link="gantry_link" />
@@ -530,6 +530,40 @@
     <axis
       xyz="0 0 0" />
   </joint>
+
+
+  <link name="camera_rgb_frame" />
+  <joint name="camera_rgb_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 -0.0093 0" />
+    <parent link="camera_link" />
+    <child link="camera_rgb_frame" />
+  </joint>
+  <link name="camera_rgb_optical_frame" />
+  <joint name="camera_rgb_optical_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 -0.0093 0" />
+    <parent link="camera_link" />
+    <child link="camera_rgb_optical_frame" />
+  </joint>
+  <link name="camera_depth_frame" />
+  <joint name="camera_depth_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 -0.0093 0" />
+    <parent link="camera_link" />
+    <child link="camera_depth_frame" />
+  </joint>
+  <link name="camera_depth_optical_frame" />
+  <joint name="camera_depth_optical_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 -0.0093 0" />
+    <parent link="camera_link" />
+    <child link="camera_depth_optical_frame" />
+  </joint>
+
+
+
+
+
+
+
+
 
    <link
     name="wall_link">
