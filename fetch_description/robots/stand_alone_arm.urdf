@@ -264,7 +264,7 @@
     </collision>
   </link>
 
-  <joint name="forearm_roll_joint" type="revolute">
+  <joint name="forearm_roll_joint" type="continuous">
     <origin rpy="0 0 0" xyz="0.197 0 0" />
     <parent link="elbow_flex_link" />
     <child link="forearm_roll_link" />
